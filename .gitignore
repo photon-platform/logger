@@ -1,0 +1,8 @@
+tags
+*.swp
+*.egg-info/
+build/
+dist/
+docs/_build
+*.egg-info
+*.py[cod]
