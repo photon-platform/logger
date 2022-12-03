@@ -10,10 +10,10 @@ from pathlib import Path
 
 import subprocess
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, PackageLoader, select_autoescape
 
 TEMPLATE_PATH = 'templates'
-LOG_TEMPLATE = 'log.rst'
+LOG_TEMPLATE = 'log.rst.j2'
 
 
 class Logger(App):
@@ -72,7 +72,8 @@ class Logger(App):
                 }
 
         env = Environment(
-            loader=FileSystemLoader(TEMPLATE_PATH),
+            #  loader=FileSystemLoader(TEMPLATE_PATH),
+            loader=PackageLoader('photonplatform.logger', 'templates'),
             )
         template = env.get_template(LOG_TEMPLATE)
         rst_text = template.render(**context)
