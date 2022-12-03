@@ -1,3 +1,4 @@
+
 from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal, Vertical
 from textual.widgets import Header, Footer, Static, Button, Input
@@ -5,36 +6,14 @@ from textual.widgets import Header, Footer, Static, Button, Input
 from rich import inspect, print
 
 from datetime import datetime
+from pathlib import Path
 
 import subprocess
 
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-def write_log(log, title, excerpt='', tags='', category='') -> str:
-    """TODO: Docstring for write_log.
-
-    :log: TODO
-    :title: TODO
-    :excerpt: TODO
-    :tags: TODO
-    :categories: TODO
-    :returns: filename
-
-    """
-    filename = f'log/{log}.rst'
-    with open(filename, 'w') as f:
-        f.write(title)
-        f.write('\n')
-        f.write('='*(len(title)))
-        f.write('\n')
-        f.write('\n')
-        f.write(f'.. post:: {log}\n')
-        f.write(f'   :tags: {tags}\n')
-        f.write(f'   :category: {category}\n')
-        f.write('\n')
-        f.write(f'{excerpt}\n')
-
-    return filename
-
+TEMPLATE_PATH = 'templates'
+LOG_TEMPLATE = 'log.rst'
 
 
 class Logger(App):
@@ -51,22 +30,20 @@ class Logger(App):
         yield Header()
         yield Footer()
         yield Container(
-            Static('LOG:'),
+            Static('LOG:', classes='label'),
             Input(value=log_str, id='log'),
-            Static('TITLE:'),
+            Static('TITLE:', classes='label'),
             Input(placeholder='Note Title', id='title'),
-            Static('EXCERPT:'),
+            Static('EXCERPT:', classes='label'),
             Input(placeholder='short desc', id='excerpt'),
-            Static('TAGS:'),
+            Static('TAGS:', classes='label'),
             Input(placeholder='comma separated list', id='tags'),
-            Static('CATEGORY:'),
+            Static('CATEGORY:', classes='label'),
             Input(placeholder='comma separated list', id='category'),
             Static(),
-            Container(
-                Button("Save", id='save'),
-                Button("Quit", id='quit'),
-                classes="buttons",
-            ),
+            Button("Save", id='save'),
+            Static(),
+            Button("Quit", id='quit'),
             id="dialog",
             classes="form"
         )
@@ -81,13 +58,29 @@ class Logger(App):
                 
 
     def action_save(self):
-        log = self.query_one('#log').value
+        log_stamp = self.query_one('#log').value
         title = self.query_one('#title').value
         excerpt = self.query_one('#excerpt').value
         tags = self.query_one('#tags').value
         category = self.query_one('#category').value
+        context = {
+                'log_stamp': log_stamp,
+                'title': title,
+                'excerpt': excerpt,
+                'tags': tags,
+                'category': category
+                }
 
-        filename = write_log(log, title, excerpt, tags, category)
+        env = Environment(
+            loader=FileSystemLoader(TEMPLATE_PATH),
+            )
+        template = env.get_template(LOG_TEMPLATE)
+        rst_text = template.render(**context)
+
+        filename = f'log/{log_stamp}.rst'
+        file_path = Path(filename)
+        file_path.write_text(rst_text)
+
         self.exit(filename)
 
 if __name__ == "__main__":

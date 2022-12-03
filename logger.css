@@ -14,14 +14,15 @@
     layout: grid;
     grid-size: 2;
     grid-rows: 4;
-    grid-columns: 12 1fr;
+    grid-columns: 13 1fr;
     background: $boost;
     border: wide $background; 
 }
 
 .form Button{
     margin: 0 1;
-    width: 100%;
+    /* width: 100%; */
+    width: 1fr;
 }
 
 .form .label {
@@ -29,28 +30,5 @@
     text-align: right;
 }
 
-
-Container > Horizontal {
-  height: 6;
-}
-
-/* The button class */
-Button {
-    width: 1fr;
-}
-
-/* Matches the question text */
-/* .question { */
-    /* text-style: bold; */
-    /* height: 100%; */
-    /* content-align: center middle; */
-/* } */
-
-/* Matches the button container */
-.buttons {
-    width: 100%;
-    height: auto;
-    dock: bottom;
-}
 
 
