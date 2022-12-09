@@ -1,16 +1,4 @@
 #!/usr/bin/env python
-
-
-
-# phi ARCHITECT build configuration file, created by
-# `ablog start` on Mon May  2 13:59:45 2022.
-#
-# Note that not all possible configuration values are present in this file.
-# All configuration values have a default; values that are commented out
-# serve to show the default.
-
-import os
-import sys
 import ablog
 import photonsphinx
 
@@ -20,7 +8,7 @@ import photonsphinx
 blog_path = 'log'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
-blog_title = "φ NOTES"
+blog_title = "PHOTON logger"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -214,7 +202,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "NOTES"
+project = "logger"
 copyright = "2022, phi ARCHITECT"
 author = "phi ARCHITECT"
 

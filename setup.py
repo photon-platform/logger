@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='logger',
+    name='photonplatform.logger',
     version='0.1.0',
     #  py_modules=['logger'],
     packages=find_packages(),
