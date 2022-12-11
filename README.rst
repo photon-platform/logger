@@ -29,5 +29,5 @@ The app is built in Python using the new Textual UI library.
 .. FILE file does not exist
 
 
-.. |22.345-054935| image:: log/22.345-054935.svg
+.. image:: log/22.345-054935.svg
 
