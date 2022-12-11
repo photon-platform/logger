@@ -1,15 +1,15 @@
 """
-PHOTON logger 
+PHOTON logger
 """
 from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal, Vertical
 from textual.widgets import Header, Footer, Static, Button, Input
 
 from rich import inspect, print
+from rich.text import Text
 
 from datetime import datetime
 from pathlib import Path
-
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
@@ -21,6 +21,7 @@ class Logger(App):
     TITLE = "PHOTON • logger"
     BINDINGS = [
             ('ctrl+s', 'save', 'save'),
+            ('ctrl+p', 'screenshot', 'screenshot'),
             ('ctrl+q', 'quit', 'quit'),
             ]
 
@@ -55,7 +56,6 @@ class Logger(App):
 
         elif event.button.id == "quit":
             self.exit()
-                
 
     def action_save(self):
         log_stamp = self.query_one('#log').value
@@ -83,3 +83,22 @@ class Logger(App):
         file_path.write_text(rst_text)
 
         self.exit(filename)
+
+    def action_screenshot(self, path: str = "./") -> None:
+        """Save an SVG "screenshot". This action will save an SVG file containing the current contents of the screen.
+
+        Args:
+            filename (str | None, optional): Filename of screenshot, or None to auto-generate. Defaults to None.
+            path (str, optional): Path to directory. Defaults to "./".
+        """
+        self.bell()
+
+        log_stamp = self.query_one('#log').value
+        filename = f'log/{log_stamp}.svg'
+        path = self.save_screenshot(filename, path)
+
+        message = Text.assemble("Screenshot saved to ", (f"'{path}'", "bold green"))
+        print(message)
+        #  self.add_note(message)
+        #  self.screen.mount(Notification(message))
+
