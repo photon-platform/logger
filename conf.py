@@ -356,8 +356,10 @@ htmlhelp_basename = "phiARCHITECTdoc"
 #  'logo': 'phi-headshot-sqr.jpg',
     
 html_theme_options = {
+    'logo': 'logo.png',
     'logo_name': True,
-    'github_user': 'phiarchitect',
+    'github_user': 'photon-platform',
+    'github_repo': 'logger',
     'github_button': True,
 }
 
