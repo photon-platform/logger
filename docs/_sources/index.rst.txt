@@ -20,7 +20,7 @@ todo
    :maxdepth: 2
    :caption: Contents:
 
-   photonplatform
+   modules
 
 
 
