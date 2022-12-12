@@ -1,33 +1,13 @@
 PHOTON logger
 =============
 
-This is a simple app to create log entries in the reST format.
+This is a simple app to create log entries in the reST format, specifically for
+the ABlog utility for Sphinx.
 
-The app is built in Python using the new Textual UI library.
-
-.. (code|contents|admonition|table|csv-table|...):: 
-
-    Content
-
-.. (math|meta|parsed-literal|line-block|header|...)::
-
-    Content
-
-.. |22.345-054935| image:: log/22.345-054935.svg
+The app is built in Python using the new Textual_ UI library.
 
 
-.. :: 
+test_
 
-.. (image|figure|include):: file
-.. FILE file does not exist
-
-.. |file| im(age):: file
-.. FILE file does not exist
-
-
-.. i(mage|nclude):: file
-.. FILE file does not exist
-
-
-.. image:: log/22.345-054935.svg
-
+.. _test: http://test.com
+.. _Textual: https://github.com/Textualize/textual
