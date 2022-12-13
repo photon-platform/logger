@@ -8,5 +8,3 @@ First Log Entry
 using this log to create a screenshot for the readme
 
 
-.. image:: log/22.347-130048.svg
-.. FILE log/22.347-130048.svg does not exist
