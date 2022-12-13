@@ -17,8 +17,8 @@ urgent todos:
 -------------
 
 .. postlist:: 
-   :tags: urgent
    :category: TODO
+   :tags: urgent
    :excerpts:
    :date: %y.%j
 
@@ -27,7 +27,7 @@ urgent todos:
 .. toctree::
    :maxdepth: 2
 
-   modules/photonplatform.rst
+   modules/photonplatform.logger.rst
 
 
 
