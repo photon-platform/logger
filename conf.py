@@ -8,7 +8,7 @@ import photonsphinx
 blog_path = 'log'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
-blog_title = "PHOTON logger"
+blog_title = "PHOTON platform • logger"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -359,7 +359,7 @@ html_theme_options = {
     'logo': 'logo.png',
     'logo_name': True,
     'github_user': 'photon-platform',
-    'github_repo': 'logger',
+    'github_repo': 'photon-logger',
     'github_button': True,
 }
 
