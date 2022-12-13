@@ -33,14 +33,14 @@ blog_authors = {
 # post_redirect_refresh = 5
 # post_show_prev_next = True
 
-#  html_sidebars = {
-    #  '**': [ 'about.html',
-            #  'postcard.html', 'navigation.html',
-            #  'recentposts.html', 'tagcloud.html',
-            #  'categories.html',  'archives.html',
-            #  'searchbox.html',
-            #  ],
-    #  }
+html_sidebars = {
+    '**': [ 'about.html',
+            'postcard.html', 'navigation.html',
+            'recentposts.html', 'tagcloud.html',
+            'categories.html',  'archives.html',
+            'searchbox.html',
+            ],
+    }
 
 # blog_feed_archives = False
 # blog_feed_fulltext = False

@@ -3,31 +3,37 @@ PHOTON logger
 
 .. include:: README.rst
 
-recent
-------
 
-.. postlist:: 
+recent logs:
+------------
+
+.. postlist:: 5
    :excerpts:
    :date: %y.%j
 
-todo
-----
 
-.. todolist::
+urgent todos:
+-------------
+
+.. postlist:: 
+   :tags: urgent
+   :category: TODO
+   :excerpts:
+   :date: %y.%j
+
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    modules/photonplatform.rst
 
 
 
 
-Indices and tables
-------------------
+.. Indices and tables
+.. ------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
