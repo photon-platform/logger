@@ -132,7 +132,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "logger"
+project = "photonplatform.logger"
 copyright = "2022, phi ARCHITECT"
 author = "phi ARCHITECT"
 

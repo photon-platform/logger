@@ -1,6 +1,6 @@
-PHOTON logger
-=============
 
+PHOTON platform • logger
+========================
 .. include:: README.rst
 
 .. image:: _static/first-entry.svg
