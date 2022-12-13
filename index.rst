@@ -1,5 +1,5 @@
 PHOTON logger
-=====
+=============
 
 .. include:: README.rst
 
@@ -20,12 +20,13 @@ todo
    :maxdepth: 2
    :caption: Contents:
 
-   photonplatform
+   modules/photonplatform.rst
+
 
 
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
