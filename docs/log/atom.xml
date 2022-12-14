@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://photon-platform.github.io/photon-logger</id>
+  <title>PHOTON platform • logger</title>
+  <updated>2022-12-14T15:37:42.808558+00:00</updated>
+  <link href="https://photon-platform.github.io/photon-logger"/>
+  <link href="https://photon-platform.github.io/photon-logger/log/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.26.dev4+g4d03eb4">ABlog</generator>
+  <entry>
+    <id>https://photon-platform.github.io/photon-logger/log/22.347-130048/</id>
+    <title>First Log Entry</title>
+    <updated>2022-12-13T13:00:48-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;using this log to create a screenshot for the readme&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-logger/log/22.347-130048/" rel="alternate"/>
+    <summary>using this log to create a screenshot for the readme</summary>
+    <published>2022-12-13T13:00:48-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-logger/log/22.347-162222/</id>
+    <title>Complete README</title>
+    <updated>2022-12-13T16:22:22-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Add log rst file and desc of ablog and theme&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-logger/log/22.347-162222/" rel="alternate"/>
+    <summary>Add log rst file and desc of ablog and theme</summary>
+    <category term="urgent" label="urgent"/>
+    <published>2022-12-13T16:22:22-08:00</published>
+  </entry>
+</feed>
