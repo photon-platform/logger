@@ -709,3 +709,24 @@ nav#breadcrumbs li+li:before {
         display: none;
     }
 }
+
+.ablog-post-title {
+  margin-bottom: 0;
+}
+
+.ablog-post-excerpt {
+  margin-top: 0;
+  margin-left: 3em;
+}
+
+div.sphinxsidebarwrapper h1.logo  {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
+div.sphinxsidebarwrapper h1.logo a:link {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
