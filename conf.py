@@ -4,10 +4,7 @@ import photonsphinx
 
 # -- General ABlog Options ----------------------------------------------------
 
-# A path relative to the configuration directory for blog archive pages.
 blog_path = 'log'
-
-# The "title" for the blog, used in active pages.  Default is ``'Blog'``.
 blog_title = "PHOTON platform • logger"
 
 # Base URL for the website, required for generating feeds.
@@ -21,78 +18,21 @@ blog_baseurl = ""
 # up project building.
 # blog_archive_titles = False
 
-# -- Blog Authors, Languages, and Locations -----------------------------------
-
-# A dictionary of author names mapping to author full display names and
-# links. Dictionary keys are what should be used in ``post`` directive
-# to refer to the author.  Default is ``{}``.
 blog_authors = {
     "phi ARCHITECT": ("phi ARCHITECT", None),
 }
-
-
-# A dictionary of language code names mapping to full display names and
-# links of these languages. Similar to :confval:`blog_authors`, dictionary
-# keys should be used in ``post`` directive to refer to the locations.
-# Default is ``{}``.
 # blog_languages = {
 #    'en': ('English', None),
 # }
-
-
-# A dictionary of location names mapping to full display names and
-# links of these locations. Similar to :confval:`blog_authors`, dictionary
-# keys should be used in ``post`` directive to refer to the locations.
-# Default is ``{}``.
 # blog_locations = {
 #    'Earth': ('The Blue Planet', 'https://en.wikipedia.org/wiki/Earth),
 # }
 
-# -- Blog Post Related --------------------------------------------------------
-
-# Format date for a post.
-# post_date_format = '%%b %%d, %%Y'
-
-# Number of paragraphs (default is ``1``) that will be displayed as an excerpt
-# from the post. Setting this ``0`` will result in displaying no post excerpt
-# in archive pages.  This option can be set on a per post basis using
 # post_auto_excerpt = 1
-
-# Index of the image that will be displayed in the excerpt of the post.
-# Default is ``0``, meaning no image.  Setting this to ``1`` will include
-# the first image, when available, to the excerpt.  This option can be set
-# on a per post basis using :rst:dir:`post` directive option ``image``.
 # post_auto_image = 0
-
-# Number of seconds (default is ``5``) that a redirect page waits before
-# refreshing the page to redirect to the post.
 # post_redirect_refresh = 5
-
-# When ``True``, post title and excerpt is always taken from the section that
-# contains the :rst:dir:`post` directive, instead of the document. This is the
-# behavior when :rst:dir:`post` is used multiple times in a document. Default
-# is ``False``.
-# post_always_section = False
-
-# When ``True``, links to the previous and next posts will be rendered at the
-# bottom of the page.
-# Default is ``True``
 # post_show_prev_next = True
 
-# When ``False``, the :rst:dir:`orphan` directive is not automatically set
-# for each post. Without this directive, Sphinx will warn about posts that
-# are not explicitly referenced via another document. :rst:dir:`orphan` can
-# be set on a per-post basis as well if this is false. Default is ``True``.
-# post_auto_orphan = True
-
-# -- ABlog Sidebars -------------------------------------------------------
-
-# There are seven sidebars you can include in your HTML output.
-# postcard.html provides information regarding the current post.
-# recentposts.html lists most recent five posts. Others provide
-# a link to a archive pages generated for each tag, category, and year.
-# In addition, there are authors.html, languages.html, and locations.html
-# sidebars that link to author and location archive pages.
 html_sidebars = {
     '**': [ 'about.html',
             'postcard.html', 'navigation.html',
@@ -102,20 +42,9 @@ html_sidebars = {
             ],
     }
 
-# -- Blog Feed Options --------------------------------------------------------
-
-# Turn feeds by setting :confval:`blog_baseurl` configuration variable.
-# Choose to create feeds per author, location, tag, category, and year,
-# default is ``False``.
 # blog_feed_archives = False
-
-# Choose to display full text in blog feeds, default is ``False``.
 # blog_feed_fulltext = False
-
-# Blog feed subtitle, default is ``None``.
 # blog_feed_subtitle = None
-
-# Choose to feed only post titles, default is ``False``.
 # blog_feed_titles = False
 
 # Specify custom Jinja2 templates for feed entry elements:
@@ -203,7 +132,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "logger"
+project = "photonplatform.logger"
 copyright = "2022, phi ARCHITECT"
 author = "phi ARCHITECT"
 

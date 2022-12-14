@@ -1,33 +1,39 @@
-PHOTON logger
-=============
 
+PHOTON platform • logger
+========================
 .. include:: README.rst
 
-recent
-------
 
-.. postlist:: 
+recent logs:
+------------
+
+.. postlist:: 5
    :excerpts:
    :date: %y.%j
 
-todo
-----
 
-.. todolist::
+urgent todos:
+-------------
+
+.. postlist:: 
+   :category: TODO
+   :tags: urgent
+   :excerpts:
+   :date: %y.%j
+
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   modules/photonplatform.rst
-
+   modules/photonplatform.logger.rst
 
 
 
-Indices and tables
-------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. Indices and tables
+.. ------------------
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
