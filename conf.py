@@ -11,7 +11,7 @@ project = f'{org_name}<br/>•<br/>{repo_name}'
 version = ""  # The short X.Y version.
 release = ""  # The full version, including alpha/beta/rc tags.
 
-copyright = f'2022, {org_name}'
+copyright = f'{year}, {org_name}'
 author = "phi ARCHITECT"
 
 # Base URL for the website, required for generating feeds.
