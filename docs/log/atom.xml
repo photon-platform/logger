@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://photon-platform.github.io/photon-logger</id>
   <title>PHOTON platform • logger</title>
-  <updated>2022-12-16T16:26:06.333456+00:00</updated>
+  <updated>2022-12-17T16:53:50.322107+00:00</updated>
   <link href="https://photon-platform.github.io/photon-logger"/>
   <link href="https://photon-platform.github.io/photon-logger/log/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.26.dev4+g4d03eb4">ABlog</generator>
@@ -29,6 +29,7 @@
     <link href="https://photon-platform.github.io/photon-logger/log/22.347-162222/" rel="alternate"/>
     <summary>Add log rst file and desc of ablog and theme</summary>
     <category term="urgent" label="urgent"/>
+    <category term="active" label="active"/>
     <published>2022-12-13T16:22:22-08:00</published>
   </entry>
   <entry>
@@ -58,5 +59,18 @@
     <category term="python" label="python"/>
     <category term="sphinx" label="sphinx"/>
     <published>2022-12-16T07:40:23-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-logger/log/22.351-084538/</id>
+    <title>Create list view</title>
+    <updated>2022-12-17T08:45:38-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Textual screen for viewing and filtering the log list&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-logger/log/22.351-084538/" rel="alternate"/>
+    <summary>Textual screen for viewing and filtering the log list</summary>
+    <category term="active" label="active"/>
+    <published>2022-12-17T08:45:38-08:00</published>
   </entry>
 </feed>
