@@ -1,7 +1,7 @@
 
 PHOTON platform • logger
 ========================
-.. include:: desc.rst
+.. include:: README.rst
 
 
 recent logs:
