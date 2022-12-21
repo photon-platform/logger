@@ -9,7 +9,6 @@ recent logs:
 
 .. postlist:: 5
    :excerpts:
-   :date: %y.%j
 
 
 urgent todos:
@@ -19,7 +18,6 @@ urgent todos:
    :category: TODO
    :tags: urgent
    :excerpts:
-   :date: %y.%j
 
 
 
