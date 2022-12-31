@@ -102,3 +102,14 @@ class Logger(App):
         #  self.add_note(message)
         #  self.screen.mount(Notification(message))
 
+
+if __name__ == "__main__":
+    import subprocess
+
+    app = Logger()
+    reply = app.run()
+    print(reply)
+
+    if reply:
+        subprocess.run(['vim', reply])
+
