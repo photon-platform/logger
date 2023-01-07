@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://photon-platform.github.io/photon-logger</id>
   <title>PHOTON platform • logger</title>
-  <updated>2022-12-31T23:58:59.397617+00:00</updated>
+  <updated>2023-01-07T03:31:48.577959+00:00</updated>
   <link href="https://photon-platform.github.io/photon-logger"/>
   <link href="https://photon-platform.github.io/photon-logger/log/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.26.dev1+geb44a66.d20221118">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.26.dev4+g4d03eb4">ABlog</generator>
   <entry>
     <id>https://photon-platform.github.io/photon-logger/log/22.347-130048/</id>
     <title>First Log Entry</title>
@@ -84,5 +84,15 @@
     <link href="https://photon-platform.github.io/photon-logger/log/22.365-142025/" rel="alternate"/>
     <summary>Smile for the camera</summary>
     <published>2022-12-31T14:20:25-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-logger/log/23.006-192648/</id>
+    <title>test</title>
+    <updated>2023-01-06T19:26:48-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-logger/log/23.006-192648/" rel="alternate"/>
+    <published>2023-01-06T19:26:48-08:00</published>
   </entry>
 </feed>

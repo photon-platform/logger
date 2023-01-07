@@ -1,6 +1,7 @@
 
 PHOTON platform • logger
 ========================
+
 .. include:: README.rst
 
 
@@ -19,7 +20,8 @@ urgent todos:
    :tags: urgent
    :excerpts:
 
-
+modules:
+--------
 
 .. toctree::
    :maxdepth: 2
@@ -27,11 +29,9 @@ urgent todos:
    modules/photonplatform.logger.rst
 
 
+indices and tables
+------------------
 
-
-.. Indices and tables
-.. ------------------
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
