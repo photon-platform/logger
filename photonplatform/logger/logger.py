@@ -41,6 +41,8 @@ class Logger(App):
             Input(placeholder='comma separated list', id='tags'),
             Static('CATEGORY:', classes='label'),
             Input(placeholder='comma separated list', id='category'),
+            Static('IMAGE:', classes='label'),
+            Input(placeholder='image path', id='image'),
             Static(),
             Button("Save", id='save'),
             Static(),
@@ -63,12 +65,14 @@ class Logger(App):
         excerpt = self.query_one('#excerpt').value
         tags = self.query_one('#tags').value
         category = self.query_one('#category').value
+        image = self.query_one('#image').value
         context = {
                 'log_stamp': log_stamp,
                 'title': title,
                 'excerpt': excerpt,
                 'tags': tags,
-                'category': category
+                'category': category,
+                'image': image,
                 }
 
         env = Environment(
@@ -78,11 +82,14 @@ class Logger(App):
         template = env.get_template(LOG_TEMPLATE)
         rst_text = template.render(**context)
 
-        filename = f'log/{log_stamp}.rst'
-        file_path = Path(filename)
-        file_path.write_text(rst_text)
+        #  filename = f'log/{log_stamp}/index.rst'
+        file_path = Path(f'log/{log_stamp}')
+        file_path.mkdir(parents=True, exist_ok=True)
 
-        self.exit(filename)
+        filename = file_path / 'index.rst'
+        filename.write_text(rst_text)
+
+        self.exit(str(filename))
 
     def action_screenshot(self, path: str = "./") -> None:
         """Save an SVG "screenshot". This action will save an SVG file containing the current contents of the screen.
