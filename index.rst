@@ -20,13 +20,14 @@ urgent todos:
    :tags: urgent
    :excerpts:
 
-modules:
+contents:
 --------
 
 .. toctree::
    :maxdepth: 2
 
-   modules/photonplatform.logger.rst
+   LOG </log#http://>
+   MODULES <modules/modules.rst>
 
 
 indices and tables
