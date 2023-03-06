@@ -1,4 +1,3 @@
-
 PHOTON platform • logger
 ========================
 
