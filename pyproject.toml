@@ -2,6 +2,9 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+# [options]
+# package_dir = [{"": "src"}]
+# packages = find:
 
 [project]
 name = "photonplatform.logger"
@@ -16,6 +19,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "textual",
+    "rich",
+    "jinja2",
 ]
 
 [project.urls]
