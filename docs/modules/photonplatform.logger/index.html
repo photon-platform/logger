@@ -4,22 +4,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>photonplatform.logger package &#8212; PHOTON platform&lt;br/&gt;•&lt;br/&gt;logger  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/photonsphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/sphinx_highlight.js"></script>
     <link rel="canonical" href="https://photon-platform.github.io/photon-logger/modules/photonplatform.logger.html" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="prev" title="PHOTON platform • logger" href="../../" /> 
+    <link rel="prev" title="photonplatform package" href="../photonplatform/" /> 
    
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
   
@@ -72,76 +69,11 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="module-photonplatform.logger.logger">
-<span id="photonplatform-logger-logger-module"></span><h2>photonplatform.logger.logger module<a class="headerlink" href="#module-photonplatform.logger.logger" title="Permalink to this heading">¶</a></h2>
-<p>PHOTON logger</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">photonplatform.logger.logger.</span></span><span class="sig-name descname"><span class="pre">Logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">driver_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Driver</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">css_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CSSPathType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">watch_css</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#photonplatform.logger.logger.Logger" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">App</span></code></p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.BINDINGS">
-<span class="sig-name descname"><span class="pre">BINDINGS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BindingType</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('ctrl+s',</span> <span class="pre">'save',</span> <span class="pre">'save'),</span> <span class="pre">('ctrl+p',</span> <span class="pre">'screenshot',</span> <span class="pre">'screenshot'),</span> <span class="pre">('ctrl+q',</span> <span class="pre">'quit',</span> <span class="pre">'quit')]</span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.BINDINGS" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.CSS_PATH">
-<span class="sig-name descname"><span class="pre">CSS_PATH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CSSPathType</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'logger.css'</span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.CSS_PATH" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.TITLE">
-<span class="sig-name descname"><span class="pre">TITLE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PHOTON</span> <span class="pre">•</span> <span class="pre">logger'</span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.TITLE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.action_save">
-<span class="sig-name descname"><span class="pre">action_save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#photonplatform.logger.logger.Logger.action_save" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.action_screenshot">
-<span class="sig-name descname"><span class="pre">action_screenshot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'./'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#photonplatform.logger.logger.Logger.action_screenshot" title="Permalink to this definition">¶</a></dt>
-<dd><p>Save an SVG “screenshot”. This action will save an SVG file containing the current contents of the screen.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>filename (str | None, optional): Filename of screenshot, or None to auto-generate. Defaults to None.
-path (str, optional): Path to directory. Defaults to “./”.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.compose">
-<span class="sig-name descname"><span class="pre">compose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Widget</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#photonplatform.logger.logger.Logger.compose" title="Permalink to this definition">¶</a></dt>
-<dd><p>Yield child widgets for a container.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.dark">
-<span class="sig-name descname"><span class="pre">dark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Reactive</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.dark" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.on_button_pressed">
-<span class="sig-name descname"><span class="pre">on_button_pressed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pressed</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#photonplatform.logger.logger.Logger.on_button_pressed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Event handler called when a button is pressed.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.sub_title">
-<span class="sig-name descname"><span class="pre">sub_title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Reactive</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.sub_title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="photonplatform.logger.logger.Logger.title">
-<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Reactive</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#photonplatform.logger.logger.Logger.title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
+<section id="photonplatform-logger-logger-module">
+<h2>photonplatform.logger.logger module<a class="headerlink" href="#photonplatform-logger-logger-module" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="module-photonplatform.logger">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-photonplatform.logger" title="Permalink to this heading">¶</a></h2>
+<section id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -181,10 +113,9 @@ path (str, optional): Path to directory. Defaults to “./”.</p>
 
 <!-- <h3>Navigation</h3> -->
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">photonplatform.logger package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-photonplatform.logger.logger">photonplatform.logger.logger module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-photonplatform.logger">Module contents</a></li>
+<li class="toctree-l1"><a class="reference external" href="/log#http://">LOG</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules/">MODULES</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../photonplatform/">photonplatform package</a></li>
 </ul>
 </li>
 </ul>
@@ -335,7 +266,7 @@ path (str, optional): Path to directory. Defaults to “./”.</p>
       &copy;2023, PHOTON platform.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.3</a>
       &amp; <a href="https://github.com/photon-platform/photon-sphinx-theme">PHOTON Sphinx 0.0.1</a>
       
       |

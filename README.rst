@@ -9,3 +9,5 @@ The app is built in Python using the new Textual_ UI library.
 
 For more information, visit the docs site for this repo at
 https://photon-platform.github.io/photon-logger
+
+

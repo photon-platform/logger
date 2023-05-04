@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# [options]
+# package_dir = [{"": "src"}]
+# packages = find:
+
+[project]
+name = "photonplatform.logger"
+version = "0.0.1"
+authors = [
+  { name="phi ARCHITECT", email="github@phiarchitect.com" },
+]
+description = "create and manage log entries for a python project"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "textual",
+    "rich",
+    "jinja2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/photon-platform/logger"
+"Bug Tracker" = "https://github.com/photon-platform/logger/issues"

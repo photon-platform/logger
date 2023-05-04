@@ -20,7 +20,7 @@ urgent todos:
    :excerpts:
 
 contents:
---------
+---------
 
 .. toctree::
    :maxdepth: 2
