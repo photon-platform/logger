@@ -111,8 +111,6 @@ class Logger(App):
 
 
 if __name__ == "__main__":
-    import subprocess
-
     app = Logger()
     reply = app.run()
     print(reply)

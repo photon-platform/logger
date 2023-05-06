@@ -26,8 +26,8 @@ dependencies = [
     "jinja2",
 ]
 
-[project.gui-scripts]
-logger = "photonplatform.logger.__main__:main"
+[project.scripts]
+log = "photonplatform.logger.app:run"
 
 [project.urls]
 "Homepage" = "https://github.com/photon-platform/logger"
