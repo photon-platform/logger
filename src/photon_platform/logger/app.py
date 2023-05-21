@@ -7,10 +7,6 @@ from .logger import Logger
 
 def run() -> None:
     """Run the application."""
-    #  CalculatorApp().run()
-
-    #  print("logger")
-    #  Logger().run()
     reply = Logger().run()
     print(reply)
 

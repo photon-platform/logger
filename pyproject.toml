@@ -1,14 +1,7 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-# [options]
-# package_dir = [{"": "src"}]
-# packages = find:
-
 [project]
-name = "photonplatform.logger"
-version = "0.0.1"
+name = "photon-platform-logger"
+dynamic = ["version"]
+# version = "0.0.1"
 authors = [
   { name="phi ARCHITECT", email="github@phiarchitect.com" },
 ]
@@ -27,7 +20,19 @@ dependencies = [
 ]
 
 [project.scripts]
-log = "photonplatform.logger.app:run"
+log = "photon_platform.logger.app:run"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["photon_platform"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "photon_platform.logger.__version__"}
 
 [project.urls]
 "Homepage" = "https://github.com/photon-platform/logger"
