@@ -4,33 +4,33 @@ PHOTON platform • logger
 .. include:: README.rst
 
 
-recent logs:
-------------
+recent logs
+-----------
 
 .. postlist:: 5
    :excerpts:
 
 
-urgent todos:
--------------
+urgent todos
+------------
 
 .. postlist:: 
    :category: TODO
    :tags: urgent
    :excerpts:
 
-contents:
----------
+contents
+--------
 
 .. toctree::
    :maxdepth: 2
 
-   LOG </log#http://>
-   MODULES <modules/modules.rst>
+   log </log#http://>
+   modules <modules/index.rst>
 
 
-indices and tables
-------------------
+indices
+-------
 
 * :ref:`genindex`
 * :ref:`modindex`
