@@ -1,8 +1,7 @@
-PHOTON platform • logger
-========================
+logger
+============
 
-.. include:: README.rst
-
+.. include:: intro.rst
 
 recent logs
 -----------
@@ -11,22 +10,22 @@ recent logs
    :excerpts:
 
 
-urgent todos
-------------
-
-.. postlist:: 
-   :category: TODO
-   :tags: urgent
-   :excerpts:
-
-contents
---------
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
 
-   log </log#http://>
-   modules <modules/index.rst>
+   mission/index.rst
+   usage/index.rst
+   demos/index.rst
+   modules/index.rst
+   logs.rst
+   refs/index.rst
+   glossary.rst
+   connect.rst
+   todos.rst
+   changelog.rst
+   about.rst
 
 
 indices

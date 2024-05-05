@@ -2,8 +2,8 @@
 PHOTON logger
 """
 from textual.app import App, ComposeResult
-from textual.containers import Container, Horizontal, Vertical
-from textual.widgets import Header, Footer, Static, Button, Input
+from textual.containers import Container, Horizontal, Vertical, VerticalScroll
+from textual.widgets import Header, Footer, Static, Button, Input, Label
 
 from rich import inspect, print
 from rich.text import Text
@@ -30,26 +30,24 @@ class Logger(App):
         log_str = log_time.strftime("%y.%j-%H%M%S")
         yield Header()
         yield Footer()
-        yield Container(
-            Static("LOG:", classes="label"),
+        yield VerticalScroll(
+            Label("LOG:"),
             Input(value=log_str, id="log"),
-            Static("TITLE:", classes="label"),
-            Input(placeholder="Note Title", id="title"),
-            Static("EXCERPT:", classes="label"),
+            Label("TITLE:"),
+            Input(placeholder="title for log entry", id="title"),
+            Label("EXCERPT:"),
             Input(placeholder="short desc", id="excerpt"),
-            Static("TAGS:", classes="label"),
+            Label("TAGS:"),
             Input(placeholder="comma separated list", id="tags"),
-            Static("CATEGORY:", classes="label"),
+            Label("CATEGORY:"),
             Input(placeholder="comma separated list", id="category"),
-            Static("IMAGE:", classes="label"),
+            Label("IMAGE:"),
             Input(placeholder="image path", id="image"),
-            Static(),
-            Button("Save", id="save"),
-            Static(),
-            Button("Quit", id="quit"),
             id="dialog",
             classes="form",
         )
+        yield Button("Save", id="save")
+        yield Button("Quit", id="quit")
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         """Event handler called when a button is pressed."""
