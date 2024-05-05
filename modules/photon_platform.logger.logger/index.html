@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="photon_platform.logger.logger" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="modules/photon_platform.logger.logger/" />
+<meta property="og:site_name" content="photon-platform • logger" />
+<meta property="og:description" content="PHOTON logger" />
+<meta name="description" content="PHOTON logger" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>photon_platform.logger.logger &mdash; PHOTON platform&lt;br/&gt;•&lt;br/&gt;logger  documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
-      <link rel="stylesheet" href="../../https://geometor.github.io/model/_static/css/rtd-dark.css" type="text/css" />
-    <link rel="canonical" href="https://photon-platform.github.io/photon-logger/modules/photon_platform.logger.logger.html" />
+  <title>photon_platform.logger.logger &mdash; photon-platform • logger</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=f2e8749c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/rtd-dark.css?v=fcc142e6" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+
+  
+    <link rel="canonical" href="https://photon-platform.github.io/logger/modules/photon_platform.logger.logger.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,9 +25,10 @@
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=187304be"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
     <link rel="next" title="photon_platform.logger.lister" href="../photon_platform.logger.lister/" />
@@ -28,7 +37,7 @@
   rel="alternate"
   type="application/atom+xml"
   href="../../log/atom.xml"
-  title="PHOTON platform • logger"
+  title="photon-platform • logger"
 />
  
 <style type="text/css">
@@ -67,7 +76,7 @@
           
           
           <a href="../../" class="icon icon-home">
-            PHOTON platform<br/>•<br/>logger
+            photon-platform • logger
               <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
@@ -79,13 +88,34 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference external" href="/log#http://">log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mission/">mission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../demos/">demos</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../">modules</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../photon_platform.logger/">photon_platform.logger</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">photon_platform.logger.logger</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">photon_platform.logger.logger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#photon_platform.logger.logger.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.CSS_PATH"><code class="docutils literal notranslate"><span class="pre">Logger.CSS_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.TITLE"><code class="docutils literal notranslate"><span class="pre">Logger.TITLE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.BINDINGS"><code class="docutils literal notranslate"><span class="pre">Logger.BINDINGS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.compose"><code class="docutils literal notranslate"><span class="pre">Logger.compose()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.on_button_pressed"><code class="docutils literal notranslate"><span class="pre">Logger.on_button_pressed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.action_save"><code class="docutils literal notranslate"><span class="pre">Logger.action_save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#photon_platform.logger.logger.Logger.action_screenshot"><code class="docutils literal notranslate"><span class="pre">Logger.action_screenshot()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../photon_platform.logger.lister/">photon_platform.logger.lister</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../logs/">logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../refs/">references</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/">glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../connect/">connect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todos/">todos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog/">changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/">about</a></li>
 </ul>
 
         </div>
@@ -94,7 +124,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../">PHOTON platform<br/>•<br/>logger</a>
+          <a href="../../">photon-platform • logger</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -105,7 +135,7 @@
           <li class="breadcrumb-item"><a href="../">modules</a></li>
       <li class="breadcrumb-item active">photon_platform.logger.logger</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/photon-platform/photon-logger/blob/main/docsrc/modules/photon_platform.logger.logger.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/photon-platform/logger/blob/main/docsrc/modules/photon_platform.logger.logger.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="../photon_platform.logger/" class="btn btn-neutral float-left" title="photon_platform.logger" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
@@ -115,8 +145,61 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-              <section id="photon-platform-logger-logger">
-<h1>photon_platform.logger.logger<a class="headerlink" href="#photon-platform-logger-logger" title="Link to this heading"></a></h1>
+              <section id="module-photon_platform.logger.logger">
+<span id="photon-platform-logger-logger"></span><h1>photon_platform.logger.logger<a class="headerlink" href="#module-photon_platform.logger.logger" title="Link to this heading"></a></h1>
+<p>PHOTON logger</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">photon_platform.logger.logger.</span></span><span class="sig-name descname"><span class="pre">Logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">driver_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Type" title="(in Python v3.9)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Driver</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">css_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/pathlib.html#pathlib.PurePath" title="(in Python v3.9)"><span class="pre">PurePath</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.List" title="(in Python v3.9)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/pathlib.html#pathlib.PurePath" title="(in Python v3.9)"><span class="pre">PurePath</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">watch_css</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/photon_platform/logger/logger/#Logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#photon_platform.logger.logger.Logger" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">App</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.CSS_PATH">
+<span class="sig-name descname"><span class="pre">CSS_PATH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">CSSPathType</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'logger.css'</span></em><a class="headerlink" href="#photon_platform.logger.logger.Logger.CSS_PATH" title="Link to this definition"></a></dt>
+<dd><p>File paths to load CSS from.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.TITLE">
+<span class="sig-name descname"><span class="pre">TITLE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PHOTON</span> <span class="pre">•</span> <span class="pre">logger'</span></em><a class="headerlink" href="#photon_platform.logger.logger.Logger.TITLE" title="Link to this definition"></a></dt>
+<dd><p>A class variable to set the <em>default</em> title for the application.</p>
+<p>To update the title while the app is running, you can set the [title][textual.app.App.title] attribute.
+See also [the <cite>Screen.TITLE</cite> attribute][textual.screen.Screen.TITLE].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.BINDINGS">
+<span class="sig-name descname"><span class="pre">BINDINGS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">BindingType</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('ctrl+s',</span> <span class="pre">'save',</span> <span class="pre">'save'),</span> <span class="pre">('ctrl+p',</span> <span class="pre">'screenshot',</span> <span class="pre">'screenshot'),</span> <span class="pre">('ctrl+q',</span> <span class="pre">'quit',</span> <span class="pre">'quit')]</span></em><a class="headerlink" href="#photon_platform.logger.logger.Logger.BINDINGS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.compose">
+<span class="sig-name descname"><span class="pre">compose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Iterable" title="(in Python v3.9)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Widget</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../_modules/photon_platform/logger/logger/#Logger.compose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#photon_platform.logger.logger.Logger.compose" title="Link to this definition"></a></dt>
+<dd><p>Yield child widgets for a container.</p>
+<p>This method should be implemented in a subclass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.on_button_pressed">
+<span class="sig-name descname"><span class="pre">on_button_pressed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pressed</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../../_modules/photon_platform/logger/logger/#Logger.on_button_pressed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#photon_platform.logger.logger.Logger.on_button_pressed" title="Link to this definition"></a></dt>
+<dd><p>Event handler called when a button is pressed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.action_save">
+<span class="sig-name descname"><span class="pre">action_save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/photon_platform/logger/logger/#Logger.action_save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#photon_platform.logger.logger.Logger.action_save" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="photon_platform.logger.logger.Logger.action_screenshot">
+<span class="sig-name descname"><span class="pre">action_screenshot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'./'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../../_modules/photon_platform/logger/logger/#Logger.action_screenshot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#photon_platform.logger.logger.Logger.action_screenshot" title="Link to this definition"></a></dt>
+<dd><p>Save an SVG “screenshot”. This action will save an SVG file containing the current contents of the screen.</p>
+<p>Args:
+filename (str | None, optional): Filename of screenshot, or None to auto-generate. Defaults to None.
+path (str, optional): Path to directory. Defaults to “./”.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 <div class="section">
@@ -133,7 +216,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, PHOTON platform.</p>
+    <p>&#169; Copyright 2024, photon-platform.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
